@@ -14,7 +14,7 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 
 // Test your function
 
-const panic = (sentence) => {
+/* const panic = (sentence) => {
   const newSentence = sentence.toUpperCase() + "!";
   const words = newSentence.split(" ");
   if (words.length > 1) {
@@ -24,6 +24,10 @@ const panic = (sentence) => {
   } else if (words.length <= 1) {
     return newSentence;
   }
+}; */
+
+const panic = (str) => {
+  return str.split(" ").join(" 😱 ") + "!";
 };
 
 console.log(panic("I'm almost out of coffee"));
